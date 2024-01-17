@@ -17,4 +17,4 @@ EXPOSE 8000
 ENV DJANGO_SETTINGS_MODULE=mysite.settings
 
 # Run app.py when the container launches
-CMD ["gunicorn", "myproject.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "mysite.wsgi:application", "--bind", "0.0.0.0:8000"]
