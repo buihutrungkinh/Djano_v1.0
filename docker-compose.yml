@@ -13,5 +13,7 @@ services:
   web:
     image: django:v1.0
     build: .
+    volumes:
+      - .:/usr/src/app
     ports:
       - 8000:8000
