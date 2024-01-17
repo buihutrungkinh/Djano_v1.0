@@ -20,7 +20,7 @@ def user_register(request):
     else:
         form = RegistrationForm()
 
-    return render(request, 'myapp/register.html', {'form': form})
+    return render(request, '../App/templates/register.html', {'form': form})
 
 def user_login(request):
     if request.method == 'POST':
@@ -35,7 +35,7 @@ def user_login(request):
         else:
             messages.error(request, 'Invalid login credentials.')
 
-    return render(request, 'myapp/login.html')
+    return render(request, '../App/templates/login.html')
 
 @login_required
 def user_logout(request):
