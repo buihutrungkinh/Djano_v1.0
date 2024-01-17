@@ -10,6 +10,7 @@ services:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: FRT@2023!
       POSTGRES_DB: postgres
+    network_mode: bridge
   web:
     image: django:v1.0
     build: .
