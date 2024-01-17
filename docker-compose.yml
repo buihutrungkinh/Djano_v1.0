@@ -10,14 +10,6 @@ services:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: FRT@2023!
       POSTGRES_DB: postgres
-
-  phpmyadmin:
-    image: phpmyadmin
-    restart: always
-    ports:
-      - 8888:80
-    environment:
-      - PMA_ARBITRARY=1
   web:
     build: .
     ports:
