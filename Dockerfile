@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 
 # Define environment variable for Django
-ENV DJANGO_SETTINGS_MODULE=myproject.settings
+ENV DJANGO_SETTINGS_MODULE=mysite.settings
 
 # Run app.py when the container launches
 CMD ["gunicorn", "myproject.wsgi:application", "--bind", "0.0.0.0:8000"]
