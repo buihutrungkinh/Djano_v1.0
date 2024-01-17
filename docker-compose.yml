@@ -11,6 +11,7 @@ services:
       POSTGRES_PASSWORD: FRT@2023!
       POSTGRES_DB: postgres
   web:
+    image: Django:v1.0
     build: .
     ports:
       - 8000:8000
