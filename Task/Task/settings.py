@@ -76,13 +76,14 @@ WSGI_APPLICATION = 'Task.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django_web',
+        'NAME': 'postgres',
         'USER': 'admin',
         'PASSWORD': 'FRT@2023!',
         'HOST': 'db',
         'PORT': '5432',
     }
 }
+
 
 
 # Password validation
